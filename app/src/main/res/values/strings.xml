@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NY Times Most Popular</string>
+    <string name="article_image">Article Image</string>
+    <string name="click_here_more">Click here for more info</string>
+</resources>

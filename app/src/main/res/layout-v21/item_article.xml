@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="articleItem"
+            type="com.alfaz.assignement.model.ArticleItem" />
+
+        <variable
+            name="mediaMetadata"
+            type="com.alfaz.assignement.model.MediaMetadata" />
+    </data>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:elevation="3dp"
+        android:background="@drawable/layout_bg"
+        android:layout_margin="@dimen/list_margin"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/list_item_height">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:civ_border_width="1dp"
+            android:layout_margin="10dp"
+            url='@{mediaMetadata.url}'
+            android:layout_gravity="center_vertical"
+            app:civ_border_color="#FF000000"/>
+
+        <RelativeLayout
+            android:id="@+id/rlItemInfo"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/itemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/list_text_size"
+                android:text="@{articleItem.title}"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/itemAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/list_author_text"
+                android:layout_below="@+id/itemTitle"
+                android:maxLines="4"
+                android:text="@{articleItem.byline}"
+                android:gravity="start"
+                android:textColor="#aaa"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/itemPublishedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/list_text_size"
+                android:layout_below="@+id/itemAuthor"
+                android:text="@{articleItem.publishedDate}"
+                android:layout_alignParentRight="true"
+                android:drawableStart="@drawable/calendar"
+                android:gravity="end"
+                android:drawableLeft="@drawable/calendar"
+                android:padding="5dp"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/chevron_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/article_image"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>
