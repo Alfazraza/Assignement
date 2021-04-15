@@ -25,17 +25,17 @@ buildscript {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        jcenter()
+    allprojects {
+        repositories {
+            google()
+            jcenter()
 
+        }
     }
-}
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
+    task clean(type: Delete) {
+        delete rootProject.buildDir
+    }
 
 
 4. Change the the gradle.properties as follows : 
