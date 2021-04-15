@@ -8,7 +8,7 @@ Getting Started
 1. Pull down the code locally.
 2. Open Android Studio and select 'Open an existing Android Studio Project'
 3. In Project Build.gradle, please copy this code
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+          // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
          buildscript {
             ext.kotlin_version = '1.3.61'
@@ -33,26 +33,26 @@ Getting Started
             }
         }
 
-    task clean(type: Delete) {
-        delete rootProject.buildDir
-    }
+             task clean(type: Delete) {
+                 delete rootProject.buildDir
+             }
 
 
 4. Change the the gradle.properties as follows : 
-org.gradle.jvmargs=-Xmx1536m
-    # When configured, Gradle will run in incubating parallel mode.
-    # This option should only be used with decoupled projects. More details, visit
-    # http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
-    # org.gradle.parallel=true
-    # AndroidX package structure to make it clearer which packages are bundled with the
-    # Android operating system, and which are packaged with your app's APK
-    # https://developer.android.com/topic/libraries/support-library/androidx-rn
-    android.useAndroidX=true
-    # Automatically convert third-party libraries to use AndroidX
-    android.enableJetifier=true
-    # Kotlin code style for this project: "official" or "obsolete":
-    kotlin.code.style=official
-    kapt.incremental.apt=true
+         org.gradle.jvmargs=-Xmx1536m
+             # When configured, Gradle will run in incubating parallel mode.
+             # This option should only be used with decoupled projects. More details, visit
+             # http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
+             # org.gradle.parallel=true
+             # AndroidX package structure to make it clearer which packages are bundled with the
+             # Android operating system, and which are packaged with your app's APK
+             # https://developer.android.com/topic/libraries/support-library/androidx-rn
+             android.useAndroidX=true
+             # Automatically convert third-party libraries to use AndroidX
+             android.enableJetifier=true
+             # Kotlin code style for this project: "official" or "obsolete":
+             kotlin.code.style=official
+             kapt.incremental.apt=true
 5. Run the application.
 
 
