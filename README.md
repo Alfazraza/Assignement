@@ -53,6 +53,7 @@ Getting Started
                        # Kotlin code style for this project: "official" or "obsolete":
                        kotlin.code.style=official
                        kapt.incremental.apt=true
+                     
 5. Run the application.
 
 
