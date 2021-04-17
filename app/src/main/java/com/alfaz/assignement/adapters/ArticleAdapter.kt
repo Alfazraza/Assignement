@@ -34,13 +34,6 @@ class ArticleDataAdapter (
         holder.itemView.setOnClickListener {
             handler.onRecyclerViewItemClick(article[position])
         }
-      //  holder.itemArticleBinding.ivItemImage.setImageResource(article[position].media[0].mediaMetadata[0].url)
-//        holder.companyItemBinding.buttonBook.setOnClickListener {
-//            listener.onRecyclerViewItemClick(holder.companyItemBinding.buttonBook, article[position])
-//        }
-//        holder.companyItemBinding.layoutLike.setOnClickListener {
-//            listener.onRecyclerViewItemClick(holder.companyItemBinding.layoutLike, article[position])
-//        }
     }
 
 
