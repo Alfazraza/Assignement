@@ -1,6 +1,6 @@
 package com.alfaz.assignement.interfaces
 
-interface UIEventManager {
+interface UIEventHandler {
     fun showToast(text: String)
 
     fun showProgressBar()

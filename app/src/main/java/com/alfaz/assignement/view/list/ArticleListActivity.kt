@@ -9,9 +9,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.alfaz.assignement.Adapters.ArticleDataAdapter
+import com.alfaz.assignement.adapters.ArticleDataAdapter
 import com.alfaz.assignement.interfaces.RecyclerViewClickHandler
-import com.alfaz.assignement.interfaces.UIEventManager
+import com.alfaz.assignement.interfaces.UIEventHandler
 import com.alfaz.assignement.R
 import com.alfaz.assignement.databinding.ActivityMainBinding
 import com.alfaz.assignement.model.ArticleItem
@@ -19,7 +19,7 @@ import com.alfaz.assignement.view.detail.ArticleDetailActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class ArticleListActivity : AppCompatActivity(),
-    UIEventManager,
+    UIEventHandler,
     RecyclerViewClickHandler {
 
     private lateinit var viewModel: ArticleListViewModel

@@ -1,4 +1,4 @@
-package com.alfaz.assignement.Adapters
+package com.alfaz.assignement.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

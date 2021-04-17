@@ -4,11 +4,9 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
-import android.view.Window
-import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.alfaz.assignement.Adapters.ImageSliderAdapter
+import com.alfaz.assignement.adapters.ImageSliderAdapter
 import com.alfaz.assignement.interfaces.MoreInfoClickHandler
 import com.alfaz.assignement.R
 import com.alfaz.assignement.databinding.ActivityArticleDetailBinding
