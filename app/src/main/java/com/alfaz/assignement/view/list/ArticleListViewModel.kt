@@ -14,7 +14,6 @@ class ArticleListViewModel(private val eventManager: UIEventManager) : ViewModel
     fun loadDataFromWeb() = liveData {
         try {
             eventManager.showProgressBar()
-            delay(1000)
             val receivedData = repository.getList()
             eventManager.hideProgressBar()
             if(receivedData.status!="OK") {
