@@ -41,12 +41,12 @@ class ArticleListActivity : AppCompatActivity(),
     }
 
 
-    private fun setDataToRecyclerView(userList: List<ArticleItem>) {
+    private fun setDataToRecyclerView(articleList: List<ArticleItem>) {
         rvMostViewedArticle.also {
             it.layoutManager = LinearLayoutManager(this@ArticleListActivity)
             it.setHasFixedSize(true)
             it.adapter =
-                ArticleDataAdapter(userList, this)
+                ArticleDataAdapter(articleList, this)
         }
     }
 
