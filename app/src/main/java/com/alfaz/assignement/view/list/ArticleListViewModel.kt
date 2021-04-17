@@ -2,12 +2,12 @@ package com.alfaz.assignement.view.list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import com.alfaz.assignement.repository.AppRepository
+import com.alfaz.assignement.repository.ArticleRepository
 import com.alfaz.assignement.interfaces.UIEventHandler
 import java.io.IOException
 
 class ArticleListViewModel(private val eventHandler: UIEventHandler) : ViewModel() {
-    private val repository = AppRepository()
+    private val repository = ArticleRepository()
 
     fun loadDataFromWeb() = liveData {
         try {

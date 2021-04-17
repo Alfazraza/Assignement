@@ -5,7 +5,7 @@ import com.alfaz.assignement.retrofit.ApiService
 import com.alfaz.assignement.retrofit.RetrofitInstance
 
 
-class AppRepository {
+class ArticleRepository {
     private var service: ApiService = RetrofitInstance.appService
 
     suspend fun getList(): Article = service.getList()
